@@ -1,0 +1,326 @@
+body {
+    font-family: 'Netflix Sans', Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    color: #fff; 
+    background-color: black
+}
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 40px; 
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 120px; 
+}
+
+.page-title {
+    font-weight: bold;
+    font-size: 58px;
+}
+
+.logo img {
+    height: 50px;
+    margin-left: 100px; 
+    margin-right: 20px; 
+}
+
+
+.language-selector {
+    background-color: black; 
+    color: #fff; 
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 6px 13px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.login-btn {
+    background-color: #e50914; 
+    color: #fff;
+    border: none;
+    padding: 6px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.form-btn {
+    background-color: red; 
+    height: 55px;
+    width: 200px;
+    color: #fff;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.email-input {
+    height: 55px;
+    width: 350px;
+    background-color: black;
+    color: #fff;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+input::placeholder {
+    padding: 10px;
+}
+
+
+.login-btn:hover {
+    background-color: #f40612;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/images/netflixbakgrund.jpeg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.3; 
+    z-index: -1;
+}
+
+.movie-roll {
+    padding: 20px 140px 20px 140px;
+}
+
+.movie-roll h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.category-selector {
+    background-color: black; 
+    color: #fff; 
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 8px 13px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.movie-container {
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-container img {
+    height: 250px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.movie {
+    margin: 25px;
+}
+
+.info {
+    padding: 50px 140px 50px 140px;
+    background-color: black;
+}
+
+.info h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.info-container {
+    height: 250px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin: 20px;
+}
+
+.text-info {
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(to top left, #990099 0%, #003399 100%);
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: left; 
+    text-align: left;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.email-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 560px;
+}
+
+.text-info h6 {
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.text-info p {
+    font-size: 16px;
+    margin: 0;
+    color: lightgray;
+}
+
+.faq {
+    padding: 50px 140px;
+    background-color: black;
+}
+
+.faq h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.accordion-item {
+    background-color: #333; 
+    border: none;
+    margin-bottom: 15px;
+}
+
+.accordion-button {
+    background-color: #444; 
+    color: white; 
+    font-size: 1.5rem; 
+    padding: 25px;
+    border: none;
+    border-radius: 10px; 
+    transition: background-color 0.3s ease; 
+}
+
+.accordion-button.collapsed {
+    background-color: #444; 
+}
+
+.accordion-button:hover {
+    background-color: #666; 
+}
+
+.accordion-body {
+    background-color: #333; 
+    color: white; 
+    font-size: 1.25rem; 
+    padding: 25px; 
+}
+
+.signup-bottom {
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+}
+
+.email-input-bottom {
+    height: 55px;
+    width: 600px;
+    background-color: black;
+    color: #fff;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.form-btn-bottom {
+    background-color: red; 
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.form-btn-new:hover {
+    background-color: #ff6347;
+}
+
+.footer-container {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 5px; 
+    padding: 10px; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    box-sizing: border-box; 
+}
+
+.flex-item {
+    background-color: black; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    text-align: left; 
+    flex: 1 1 18%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    min-width: 150px; 
+}
+
+.flex-item a {
+    display: block; 
+    text-decoration: underline;
+    color: #b0b0b0; 
+    font-size: 14px; 
+    margin-bottom: 2px; 
+}
+
+.language-selector-footer {
+    display: flex;
+    align-items: center;
+    margin-left: 240px;
+    background-color: black; 
+    color: #fff; 
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 6px 13px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.footer-netflix {
+    height: 100px;
+    margin-left: 240px;
+    margin-top: 30px;
+    font-size: 13px;
+    color: #b0b0b0;
+}
