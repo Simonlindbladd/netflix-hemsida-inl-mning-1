@@ -23,11 +23,11 @@
     <header>
       <!-- Logo -->
       <div class="logo">
-        <img src="assets/images/netflixlogo1111.png" alt="Netflix Logo"/>
+        <img src="assets/images/netflixlogo1111.png" alt="Netflix Logo" />
       </div>
 
       <!-- Header -->
-      <nav>
+      <nav aria-label="Huvudmeny">
         <div class="header-right">
           <select class="language-selector" aria-label="Välj språk">
             <option value="sv">Svenska</option>
@@ -61,13 +61,15 @@
                 id="email-hero"
                 placeholder="E-postadress"
                 type="email"
-                aria-label="E-postadress"/>
+                aria-label="E-postadress"
+                required
+              />
               <div>
                 <button class="form-btn" type="submit">
                   Kom igång
                   <span>&#8594;</span>
                 </button>
-              </div>                
+              </div>
             </div>
           </form>
         </div>
@@ -121,25 +123,25 @@
         <h2>Fler skäl att abonnera</h2>
         <div class="info-container">
           <div class="text-info">
-            <h4>Titta på din tv</h4>
+            <h3>Titta på din tv</h3>
             <p>
               Titta på smart-tv-apparater, Playstation, Xbox, Chromecast, Apple
               TV, Blu-ray-spelare och många fler.
             </p>
           </div>
           <div class="text-info">
-            <h4>Ladda ner dina serier och titta offline</h4>
+            <h3>Ladda ner dina serier och titta offline</h3>
             <p>Spara dina favoriter så har du alltid något att titta på.</p>
           </div>
           <div class="text-info">
-            <h4>Titta var som helst</h4>
+            <h3>Titta var som helst</h3>
             <p>
               Streama obegränsat med filmer och serier på din mobil, surfplatta,
               dator och tv.
             </p>
           </div>
           <div class="text-info">
-            <h4>Skapa profiler för barn</h4>
+            <h3>Skapa profiler för barn</h3>
             <p>
               Skicka ut barnen på äventyr med sina favoritkaraktärer i en profil
               som bara är till för dem och som ingår gratis i ditt abonnemang.
@@ -152,6 +154,177 @@
       <section class="faq">
         <h2>Vanliga frågor och svar</h2>
         <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Vad är Netflix?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Netflix är en streamingtjänst som erbjuder ett stort utbud av
+                prisbelönta serier, filmer, anime, dokumentärer och mycket mer
+                på tusentals internetanslutna enheter. Du kan titta så mycket du
+                vill, när du vill och utan ett enda reklamavbrott - allt för en
+                låg månadskostnad. Det finns alltid något nytt att upptäcka, och
+                nya serier och filmer läggs till varje vecka!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Hur mycket kostar Netflix?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Titta på Netflix på din smartphone, surfplatta, smart-tv,
+                bärbara dator eller streamingenhet - allt för en fast
+                månadsavgift. Abonnemang från 99 kr till 179 kr per månad. Inga
+                ytterligare kostnader, inga bindningstider.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Var kan jag titta?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Titta var du vill, när du vill. Logga in med ditt Netflix-konto
+                för att titta direkt på webben på netflix.com från din dator
+                eller någon annan enhet som har Netflix-appen, till exempel
+                smart-tv-apparater, smartphones, surfplattor, streamingspelare
+                och spelkonsoler. Du kan också ladda ner dina favoritserier med
+                iOS- eller Android-appen. Använd nerladdningar för att titta när
+                du är på språng eller saknar internetanslutning. Ta med dig
+                Netflix överallt.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                Hur gör jag för att avsluta?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Netflix är flexibelt. Det finns inga krångliga kontrakt och inga
+                förpliktelser. Du kan enkelt avsluta ditt konto online med två
+                klick. Det finns inga uppsägningsavgifter - starta eller avsluta
+                ditt konto när som helst.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                Vad kan jag se på Netflix?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Netflix har ett stort bibliotek med filmer, dokumentärer,
+                serier, anime, prisbelönt originalinnehåll från Netflix och
+                mycket annat. Titta så mycket du vill, när du vill.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix"
+                aria-expanded="false"
+                aria-controls="flush-collapseSix"
+              >
+                Passar Netflix för barn?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingSix"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Netflix för barn ingår i ditt abonnemang så att du som förälder
+                har kontroll över innehållet samtidigt som barnen kan upptäcka
+                familjevänliga serier och filmer i sin egen profil. Barnprofiler
+                har PIN-kodsskyddade föräldrakontroller där du kan sätta en
+                åldersgräns för det innehåll barnen får titta på. Du kan även
+                blockera specifika titlar som du inte vill att barnen ska se.
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -170,6 +343,7 @@
               placeholder="E-postadress"
               type="email"
               aria-label="E-postadress"
+              required
             />
             <button class="form-btn-bottom" type="submit">Kom igång</button>
           </form>
@@ -179,44 +353,44 @@
 
     <!--Footer-->
     <footer>
-        <div class="footer">
-            <div class="footer-container">
-                <nav class="flex-item">
-                    <a href="#">Vanliga frågor</a><br>
-                    <a href="#">Investerarrelationer</a><br>
-                    <a href="#">Sätt att titta</a><br>
-                    <a href="#">Företagsinformation</a><br>
-                    <a href="#">Juridisk information</a>
-                </nav>
-                <nav class="flex-item">
-                    <a href="#">Hjälpcenter</a><br>
-                    <a href="#">Jobba hos oss</a><br>
-                    <a href="#">Användarvillkor</a><br>
-                    <a href="#">Kontakta oss</a><br>
-                    <a href="#">Bara på Netflix</a>
-                </nav>
-                <nav class="flex-item">
-                    <a href="#">Ditt konto</a><br>
-                    <a href="#">Lös in presentkort</a><br>
-                    <a href="#">Sekretess</a><br>
-                    <a href="#">Hastighetstest</a><br>
-                    <a href="#">Reklaminställningar</a>
-                </nav>
-                <nav class="flex-item">
-                    <a href="#">Mediecenter</a><br>
-                    <a href="#">Köp presentkort</a><br>
-                    <a href="#">Cookie-inställningar</a><br>
-                    <a href="#">Juridisk garanti</a><br>
-                </nav>
-            </div>
+      <div class="footer">
+        <div class="footer-container">
+          <nav class="flex-item" aria-label="Footermeny 1">
+            <a href="#">Vanliga frågor</a>
+            <a href="#">Investerarrelationer</a>
+            <a href="#">Sätt att titta</a>
+            <a href="#">Företagsinformation</a>
+            <a href="#">Juridisk information</a>
+          </nav>
+          <nav class="flex-item" aria-label="Footermeny 2">
+            <a href="#">Hjälpcenter</a>
+            <a href="#">Jobba hos oss</a>
+            <a href="#">Användarvillkor</a>
+            <a href="#">Kontakta oss</a>
+            <a href="#">Bara på Netflix</a>
+          </nav>
+          <nav class="flex-item" aria-label="Footermeny 3">
+            <a href="#">Ditt konto</a>
+            <a href="#">Lös in presentkort</a>
+            <a href="#">Sekretess</a>
+            <a href="#">Hastighetstest</a>
+            <a href="#">Reklaminställningar</a>
+          </nav>
+          <nav class="flex-item" aria-label="Footermeny 4">
+            <a href="#">Mediecenter</a>
+            <a href="#">Köp presentkort</a>
+            <a href="#">Cookie-inställningar</a>
+            <a href="#">Juridisk garanti</a>
+          </nav>
         </div>
-            <select class="language-selector-footer" aria-label="Välj språk">
-                <option value="sv">Svenska</option>
-                <option value="en">English</option>
-              </select>
-            <div class="footer-netflix">
-                Netflix Sverige
-            </div>
+      </div>
+      <select class="language-selector-footer" aria-label="Välj språk">
+        <option value="sv">Svenska</option>
+        <option value="en">English</option>
+      </select>
+      <div class="footer-netflix">
+        Netflix Sverige
+      </div>
     </footer>
   </body>
 </html>
