@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #fff; 
-    background-color: black
+    background-color: black;
 }
 
 header {
@@ -34,8 +34,8 @@ header {
     margin-right: 20px; 
 }
 
-
-.language-selector {
+.language-selector,
+.language-selector-footer {
     background-color: black; 
     color: #fff; 
     border: 1px solid #555;
@@ -67,18 +67,20 @@ header {
     border-radius: 4px;
 }
 
-.email-input {
+.email-input,
+.email-input-bottom {
     height: 55px;
     width: 350px;
     background-color: black;
     color: #fff;
     border: 2px solid gray;
     border-radius: 5px;
-}
-input::placeholder {
     padding: 10px;
 }
 
+input::placeholder {
+    padding: 10px;
+}
 
 .login-btn:hover {
     background-color: #f40612;
@@ -95,7 +97,6 @@ input::placeholder {
     overflow: hidden;
 }
 
-
 .hero::before {
     content: "";
     position: absolute;
@@ -110,7 +111,7 @@ input::placeholder {
 }
 
 .movie-roll {
-    padding: 20px 140px 20px 140px;
+    padding: 20px 140px;
 }
 
 .movie-roll h2 {
@@ -189,7 +190,7 @@ input::placeholder {
     width: 560px;
 }
 
-.text-info h6 {
+.text-info h4 {
     font-size: 20px;
     margin: 0;
     padding-bottom: 10px;
@@ -257,6 +258,7 @@ input::placeholder {
     color: #fff;
     border: 2px solid gray;
     border-radius: 5px;
+    padding: 10px;
 }
 
 .form-btn-bottom {
@@ -269,7 +271,7 @@ input::placeholder {
     border-radius: 4px;
 }
 
-.form-btn-new:hover {
+.form-btn-bottom:hover {
     background-color: #ff6347;
 }
 
@@ -323,4 +325,15 @@ input::placeholder {
     margin-top: 30px;
     font-size: 13px;
     color: #b0b0b0;
+}
+
+.visually-hidden { 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip: rect(0,0,0,0); 
+    border: 0; 
 }
